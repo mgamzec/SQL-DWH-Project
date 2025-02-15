@@ -80,11 +80,11 @@ BEGIN
 		PRINT '------------------------------------------------';
 		
 		SET @start_time = GETDATE();
-		PRINT '>> Truncating Table: bronze.erp_loc_a101';
+		PRINT '>> Truncating Table: bronze.erp_loc_A101';
 		TRUNCATE TABLE bronze.erp_loc_a101;
-		PRINT '>> Inserting Data Into: bronze.erp_loc_a101';
+		PRINT '>> Inserting Data Into: bronze.erp_loc_A101';
 		BULK INSERT bronze.erp_loc_a101
-		FROM 'C:\sql\dwh_project\datasets\source_erp\loc_a101.csv'
+		FROM 'C:\Users\merve\Desktop\sql-data-warehouse-project-main\sql-data-warehouse-project-main\datasets\source_erp\loc_A101.csv'
 		WITH (
 			FIRSTROW = 2,
 			FIELDTERMINATOR = ',',
@@ -95,11 +95,11 @@ BEGIN
 		PRINT '>> -------------';
 
 		SET @start_time = GETDATE();
-		PRINT '>> Truncating Table: bronze.erp_cust_az12';
+		PRINT '>> Truncating Table: bronze.erp_cust_AZ12';
 		TRUNCATE TABLE bronze.erp_cust_az12;
-		PRINT '>> Inserting Data Into: bronze.erp_cust_az12';
+		PRINT '>> Inserting Data Into: bronze.erp_cust_AZ12';
 		BULK INSERT bronze.erp_cust_az12
-		FROM 'C:\Users\merve\Desktop\sql-data-warehouse-project-main\sql-data-warehouse-project-main\datasets\source_erp\cust_az12.csv'
+		FROM 'C:\Users\merve\Desktop\sql-data-warehouse-project-main\sql-data-warehouse-project-main\datasets\source_erp\cust_AZ12.csv'
 		WITH (
 			FIRSTROW = 2,
 			FIELDTERMINATOR = ',',
@@ -110,11 +110,11 @@ BEGIN
 		PRINT '>> -------------';
 
 		SET @start_time = GETDATE();
-		PRINT '>> Truncating Table: bronze.erp_px_cat_g1v2';
+		PRINT '>> Truncating Table: bronze.erp_PX_CAT_G1V2';
 		TRUNCATE TABLE bronze.erp_px_cat_g1v2;
-		PRINT '>> Inserting Data Into: bronze.erp_px_cat_g1v2';
+		PRINT '>> Inserting Data Into: bronze.erp_PX_CAT_G1V2';
 		BULK INSERT bronze.erp_px_cat_g1v2
-		FROM 'C:\Users\merve\Desktop\sql-data-warehouse-project-main\sql-data-warehouse-project-main\datasets\source_erp\px_cat_g1v2.csv'
+		FROM 'C:\Users\merve\Desktop\sql-data-warehouse-project-main\sql-data-warehouse-project-main\datasets\source_erp\PX_CAT_G1V2.csv'
 		WITH (
 			FIRSTROW = 2,
 			FIELDTERMINATOR = ',',
