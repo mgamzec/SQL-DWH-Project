@@ -90,3 +90,5 @@ data-warehouse-project/
 └── requirements.txt                    # Dependencies and requirements for the project
 ```
 ---
+![image](https://github.com/user-attachments/assets/981b549e-9643-4744-bab1-56fa49298b90)
+
